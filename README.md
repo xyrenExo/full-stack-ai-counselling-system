@@ -124,5 +124,5 @@ POST /chat
 - **Crisis Support** - Hotline suggestions and urgent care guidance
 
 ### Note
-## I replaced the torch ~2Gb+ version with 200Mb version for compatible wit Railway free Build
+## I replaced the torch ~2Gb+ version with 200Mb version for compatible with Railway free Build
 This system provides emotional support but is NOT a replacement for professional mental health care. If you're in crisis, please contact emergency services or a crisis hotline immediately.
