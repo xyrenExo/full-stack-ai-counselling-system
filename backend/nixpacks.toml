@@ -1,8 +1,11 @@
+[setup]
+nixpkgsArchive = "c78c096c1eab390d3010ca8801a6c673fb412664"
+
 [phases.setup]
 nixPkgs = ["python310"]
 
 [phases.install]
-cmds = ["pip install -r requirements.txt"]
+cmds = ["python -m venv /opt/venv", "/opt/venv/bin/pip install -r requirements.txt"]
 
 [start]
-cmd = "python app.py"
+cmd = "/opt/venv/bin/python app.py"
