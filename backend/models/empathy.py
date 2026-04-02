@@ -1,9 +1,15 @@
+import os
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from huggingface_hub import login
 import warnings
 warnings.filterwarnings('ignore')
 
 EMPATHY_MODEL_NAME = "AliiaR/DialoGPT-medium-empathetic-dialogues"
+
+hf_token = os.getenv("HF_TOKEN")
+if hf_token:
+    login(token=hf_token)
 
 class EmpathyRefiner:
     def __init__(self):

@@ -1,7 +1,13 @@
+import os
 import torch
 from transformers import pipeline
+from huggingface_hub import login
 
 EMOTION_MODEL_NAME = "SamLowe/roberta-base-go_emotions"
+
+hf_token = os.getenv("HF_TOKEN")
+if hf_token:
+    login(token=hf_token)
 
 class EmotionDetector:
     def __init__(self):
